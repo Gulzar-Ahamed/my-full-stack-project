@@ -1,0 +1,97 @@
+.ProductsContainer >h2{
+    /* color:rgba(210, 24, 24, 0.847); */
+    color:#7077A1;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+.css-dev-only-do-not-override-zl9ks2{
+    /* padding:0px 3px 2px;; */
+    padding:0px;
+    /* padding-left: 3px; */
+}
+
+div.ant-col.GridColumn.css-dev-only-do-not-override-zl9ks2{
+    padding:0px;
+    /* this is not working in condition */
+}
+.ProductsContainer{
+    padding: 7px;
+    /* background-color: #FFEEF4; */
+    /* background-color: #f0f0f0; */
+    margin-top: 2rem;
+}
+
+.GridRowStyling{
+     display: grid;
+     grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
+    
+    padding: 2px;
+    margin-top: 2rem;
+    
+    justify-content: center;
+    /* background-color: yellowgreen; */
+}
+/* please use the above for categories also perfect concept */
+.GridColumn{
+    
+    /* min-width: 280px; */
+    
+    /* height: 400px; */
+    width: 80%;
+    min-width: 280px;
+    margin:2px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+/* .GridColumn:hover{
+    background-color: rgb(0, 0, 0,0.2);
+} */
+
+
+  .hovered-card {
+    background-color: rgba(0, 0, 0, 0.3); /* Change background color on hover */
+    z-index: 1; /* Bring the card to the front when hovered */
+  }
+  
+  
+   
+  
+.CardImage{
+    height: 290px;
+    /* width: 290px; */
+    width: max-content;
+    object-fit: fill;
+}
+
+ .CardButton{
+    display: flex;
+    justify-content: center;
+     align-items: stretch;
+     transition: rgb(0,0,0,0.2) 0.2s ease;
+
+} 
+
+  @media screen and (max-width: 768px) {
+    .GridRowStyling {
+        grid-template-columns: repeat(1,1fr);
+        /* grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); Adjust minimum width for smaller screens */
+    }
+
+    .GridColumn {
+        width: 90%;
+        min-width: 160px; /* Adjust minimum width for smaller screens */
+        max-width: none; /* Allow cards to take the full width on smaller screens */
+        border-style: solid;
+        border-width: 3px;
+        color:lightgray
+    }
+
+    .CardImage {
+        height: 190px; /* Adjust card height for smaller screens */
+       object-fit: fill;
+       /* the above one once i change it from contain to fill problem resolved */
+       
+       width: 100%; /* Adjust card width for smaller screens */
+    }
+}

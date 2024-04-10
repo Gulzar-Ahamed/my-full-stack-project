@@ -1,0 +1,152 @@
+.RegisterContainer,.LoginContainer {
+     width: 100%;
+     height: 100vh;
+     background-image: url("../wallpaper/wallpaper_4.png");
+     /* the below 2 are new and please learn that  */
+     background-size: cover;
+     background-position: center;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+   
+   .LoginContainer{
+     width: 100%;
+      height: 100vh;
+      background-image: url("../wallpaper/wallpaper_1.jpg");
+      /* the below 2 are new and please learn that  */
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+ }
+
+ .form-button{
+  font-size: 1.2rem;
+  font-weight: 900;
+
+  font-family: monospace;
+  
+  background-color:white;
+  color:black;
+  border:black 3px solid;
+  text-align:center;
+  width:auto;
+ }
+
+
+ .custom-message{
+  font-weight:bolder;
+  font-family:serif;
+  font-size:1.1rem;
+}
+ /* starting point of specifically for reset password styling */
+.resetPassword-ParentContainer{
+ 
+  margin:50px auto;
+  background-color: #4A55A2;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.resetPassword-ChildContainer{
+
+  width:60vw; 
+  height: 40vh;
+}
+ /*  ending point of specifically for reset password styling */
+ 
+
+/* starting point of specifically for reset password 2 styling */
+.resetPassword2-ParentContainer{
+
+ margin:50px auto; 
+ background-color: rgba(255, 255, 255, 0.1); /* Set a semi-transparent background */
+  backdrop-filter: blur(2px); /* Apply a blur effect to create a glassy look */
+  border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+  padding: 20px; /* Optional: Add padding for content inside the container */
+}
+.resetPassword2-ChildContainer{
+
+ width:60vw; 
+ height: 40vh;
+}
+.parent-container{
+  background-image: url("https://img.freepik.com/free-vector/reset-password-concept-illustration_114360-7966.jpg?w=740&t=st=1706513974~exp=1706514574~hmac=382b5e1b73ff8858e14f8c7b63836d19855d7d2e32b109314dc58224321ebfa8");
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  overflow-y: hidden;
+}
+/*  ending point of specifically for reset password 2 styling */
+
+
+ .noUnderlineForLink{
+   color:black;
+   font-size: 1.1rem;
+    font-weight: 700;
+    font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration:none;
+
+ }
+
+ .noUnderlineForLink:hover{
+  text-decoration: none !important;
+ }
+
+ .header{
+  margin-bottom: 10px;
+   color:black;
+   font-size: 1.2rem;
+    font-weight: 800;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration:none;
+
+ }
+   .FormContainer {
+     background: rgba(255, 255, 255, 0.2); /* Add a semi-transparent white background */
+     padding: 20px 10px; /* Adjust padding as needed */
+     border-radius: 10px; /* Add rounded corners for the glass effect */
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+     backdrop-filter: blur(4px); /* Apply a blur effect to create the glass effect */
+     max-width: 500px; /* Set a maximum width for the container */
+     width: 80%; /* Adjust the width as needed */
+     text-align: center;
+     margin: 0 auto;
+    
+}
+   
+
+
+label{
+
+     font-size: 1.1rem;
+     font-weight: 700;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a:hover{
+     color:#4A55A2;
+     text-decoration: underline;
+}
+
+
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+     .FormContainer {
+       padding: 20px; /* Reduce padding for smaller screens */
+       max-width: 90%; /* Adjust the width for smaller screens */
+     }
+   }
+
+/* the below one is to form validation error message */
+   .ant-form-item-explain {
+   letter-spacing: 0.1rem;
+     color: red; /* Change the color to red */
+     font-weight: bolder; /* Change the font weight to bold */
+   }
+   

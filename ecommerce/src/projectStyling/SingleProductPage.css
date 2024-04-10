@@ -1,0 +1,110 @@
+.SingleProductContainer{
+    padding:25px;
+    display: flex;
+   height: 65vh;
+    width: 80%;
+    /* background-color: black; */
+}
+/* .ant-carousel.css-dev-only-do-not-override-zl9ks2 {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+} */
+
+/* .carouselImage{
+  
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      
+      
+} */
+
+.strikeOutText{
+    text-decoration: line-through;
+    color:gray;
+    font-size: medium;
+}
+.SingleProductImage{
+    flex: 1;
+    padding: 0 10px;
+    object-fit: cover;
+}
+
+.SingleProductContent{
+    flex: 2;
+    padding: 0 10px;
+    /* background-color: rosybrown; */
+}
+
+.SingleProductContent >h2{
+    color:black;
+    padding-top: 10px;
+    letter-spacing: 0.1rem;
+    font-weight: 900;
+    
+}
+.SingleProductImage > img{
+    width:100%;
+    height: 100%;
+} 
+
+.SingleProductContent >  p{
+    margin-top: 12px;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+} 
+
+.SingleProductContent  >span{
+    margin-top: 15px;
+    padding-top: 20px;
+    font-size: 1.4rem;
+} 
+
+.FilterContainer{
+    display: flex;
+    /* justify-content:space-between; */
+    width: 80%;
+    margin-top: 7px;
+    padding-top: 10px;
+}
+
+.FilterBySize > span,.FilterByColor >span{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+/* above one is for my filterbysize div contains span element */
+
+.FilterByColor{
+    display: flex;
+}
+
+.FilterContainer2{
+    display: flex;
+    justify-content: space-between;
+    width:80%;
+    margin-top: 10px;
+}
+
+.Counter{
+    display: flex;
+    justify-content: space-between;
+}
+.ColorPaletteContainer{
+    height: 21px;
+    width:21px;
+    /* background-color: rgb(208, 208, 53); */
+    border-radius: 50%;
+}
+
+
+
+@media screen and (max-width:570px) { 
+    .SingleProductContainer{
+        flex-direction: column;
+         height: 55vh; 
+          /* i hide this for a reason. */
+        width: 80%;
+         padding: 10px; 
+    }
+}

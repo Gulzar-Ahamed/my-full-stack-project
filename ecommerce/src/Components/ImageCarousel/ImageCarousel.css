@@ -1,0 +1,24 @@
+
+.carouselContainer {
+  width: 80%; /* Set the width of the carousel container */
+  max-width: 400px; /* Set the maximum width if needed */
+  margin: 0 auto; /* Center the carousel container */
+}
+
+.carousel-image {
+  width: 100%; /* Make the image fill the width of its container */
+  height: 100%; /*decide whether to give 100% or 360px height recommended is 360px*/
+  max-height: 100%; /* Set the maximum height if needed */
+  object-fit: cover; /* Ensure the image covers the entire container */
+}
+  
+
+  
+  .slick-dots.slick-dots-bottom li button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: lightgrey;
+    border: 2px solid black;
+  }
+  
